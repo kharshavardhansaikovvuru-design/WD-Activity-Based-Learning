@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Crumbs Bakery</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #4a2c2a;
+      background: #fffaf4;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 16px #542b2010;
+    }
+    .logo {
+      color: #a74435;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .logo span { color: #e6a23c; }
+    nav a {
+      text-decoration: none;
+      color: #4a2c2a;
+      margin: 0 10px;
+    }
+    .hero {
+      padding: 60px 7%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      background: linear-gradient(120deg, #ffe9d2, #fff6e9);
+    }
+    .hero-copy { flex: 1 1 300px; }
+    .eyebrow {
+      color: #b44a38;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin: 10px 0;
+    }
+    .hero h1 span { color: #b44a38; }
+    .hero p { max-width: 550px; color: #76524b; }
+    .button {
+      display: inline-block;
+      background: #b44a38;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    .cake-art {
+      flex: 0 1 260px;
+      height: 220px;
+      border-radius: 28px;
+      background: #f7c8a8;
+      display: grid;
+      place-items: center;
+      font-size: 100px;
+      border: 8px solid white;
+      box-shadow: 0 10px 25px #8c4a3218;
+    }
+    section { padding: 35px 7%; }
+    section h2 {
+      text-align: center;
+      color: #a74435;
+      margin-top: 0;
+    }
+    .products {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .product {
+      flex: 1 1 210px;
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px #542b2010;
+    }
+    .product .emoji {
+      height: 105px;
+      display: grid;
+      place-items: center;
+      background: #fff0e2;
+      border-radius: 10px;
+      font-size: 54px;
+    }
+    .product h3 { margin-bottom: 5px; }
+    .price {
+      color: #b44a38;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .offer {
+      background: #a74435;
+      color: white;
+      text-align: center;
+      padding: 35px 7%;
+    }
+    .offer h2 { color: #ffe2a8; }
+    .offer .button {
+      background: #ffe2a8;
+      color: #743126;
+    }
+    footer {
+      background: #422824;
+      color: #fff5eb;
+      text-align: center;
+      padding: 24px;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      nav { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sweet <span>Crumbs</span> Bakery</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#offers">Special Offers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESH FROM OUR OVEN</p>
+        <h1>A little sweetness<br>
+          makes life <span>better.</span>
+        </h1>
+        <p>
+          Handcrafted cakes, buttery pastries and delightful treats,
+          baked fresh every day with love and the finest ingredients.
+        </p>
+        <a class="button" href="#menu">Explore Our Menu</a>
+      </div>
+      <div class="cake-art" aria-label="Illustration of a cake">🎂</div>
+    </section>
+
+    <section id="menu">
+      <h2>Customer Favourites</h2>
+      <div class="products">
+        <article class="product">
+          <div class="emoji">🎂</div>
+          <h3>Chocolate Truffle Cake</h3>
+          <p>Rich chocolate, smooth ganache.</p>
+          <p class="price">₹650 onwards</p>
+        </article>
+        <article class="product">
+          <div class="emoji">🧁</div>
+          <h3>Vanilla Cupcakes</h3>
+          <p>Soft, fluffy and beautifully topped.</p>
+          <p class="price">₹80 each</p>
+        </article>
+        <article class="product">
+          <div class="emoji">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Golden, flaky and freshly baked.</p>
+          <p class="price">₹120 each</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="offer" id="offers">
+      <h2>Make Every Celebration Sweeter</h2>
+      <p>
+        Order a custom cake for birthdays, anniversaries and special days.
+      </p>
+      <a class="button" href="mailto:hello@sweetcrumbs.example">
+        Order a Custom Cake
+      </a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <strong>Sweet Crumbs Bakery</strong><br>
+    Freshly baked with love · Open daily, 9:00 AM–8:00 PM<br>
+    Email: hello@sweetcrumbs.example · © 2026
+  </footer>
+</body>
+</html>
