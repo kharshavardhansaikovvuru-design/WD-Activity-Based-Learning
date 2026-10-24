@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Future College</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #18314f;
+      background: #f5f9ff;
+      line-height: 1.6;
+    }
+    .topbar {
+      background: #102b4e;
+      color: white;
+      padding: 9px 7%;
+      font-size: 13px;
+      text-align: right;
+    }
+    header {
+      background: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 15px #12345612;
+    }
+    .brand {
+      font-size: 23px;
+      font-weight: bold;
+      color: #1267b1;
+    }
+    .brand span { color: #f3a712; }
+    nav a {
+      color: #18314f;
+      text-decoration: none;
+      margin: 0 9px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 65px 7%;
+      color: white;
+      background: linear-gradient(120deg, #07549a, #188bd0);
+    }
+    .hero .eyebrow {
+      color: #ffdc7a;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.15;
+      max-width: 700px;
+      margin: 12px 0;
+    }
+    .hero p { max-width: 620px; color: #e5f4ff; }
+    .button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 20px;
+      background: #ffbf36;
+      color: #18314f;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 20px 7%;
+      background: #e6f3ff;
+    }
+    .stat {
+      flex: 1 1 150px;
+      text-align: center;
+      padding: 13px;
+      background: white;
+      border-radius: 10px;
+    }
+    .stat strong {
+      display: block;
+      color: #0875be;
+      font-size: 25px;
+    }
+    section { padding: 35px 7%; }
+    section h2 {
+      text-align: center;
+      color: #07549a;
+      margin-top: 0;
+    }
+    .course-grid {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .course {
+      flex: 1 1 220px;
+      background: white;
+      border-radius: 12px;
+      padding: 22px;
+      border-bottom: 4px solid #ffbf36;
+      box-shadow: 0 5px 18px #153d6412;
+    }
+    .course .icon { font-size: 28px; }
+    .course h3 { margin-bottom: 6px; }
+    .admission {
+      background: #fff3d4;
+      text-align: center;
+      padding: 35px 7%;
+    }
+    footer {
+      background: #102b4e;
+      color: white;
+      padding: 25px 7%;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      nav { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    Call: +91 98765 43210 &nbsp; | &nbsp;
+    admissions@brightfuture.edu
+  </div>
+
+  <header>
+    <div class="brand">BRIGHT <span>FUTURE</span> COLLEGE</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <p class="eyebrow">LEARN · LEAD · SUCCEED</p>
+      <h1>Your future begins with the right education.</h1>
+      <p>
+        Discover your potential at Bright Future College. Learn from
+        experienced faculty, explore new ideas and prepare for a career
+        that makes a difference.
+      </p>
+      <a class="button" href="#admissions">Apply for Admission</a>
+    </section>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>25+</strong>Years of Excellence
+      </div>
+      <div class="stat">
+        <strong>40+</strong>Career-focused Courses
+      </div>
+      <div class="stat">
+        <strong>8,000+</strong>Successful Graduates
+      </div>
+      <div class="stat">
+        <strong>95%</strong>Placement Support
+      </div>
+    </div>
+
+    <section id="courses">
+      <h2>Explore Our Popular Courses</h2>
+      <div class="course-grid">
+        <article class="course">
+          <div class="icon">💻</div>
+          <h3>B.Sc. Computer Science</h3>
+          <p>Build skills in programming, databases and modern computing.</p>
+        </article>
+        <article class="course">
+          <div class="icon">📊</div>
+          <h3>B.Com. Commerce</h3>
+          <p>Understand accounting, finance, business and management.</p>
+        </article>
+        <article class="course">
+          <div class="icon">🧪</div>
+          <h3>B.Sc. Life Sciences</h3>
+          <p>Explore biology, laboratory practice and scientific discovery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="admission" id="admissions">
+      <h2>Admissions Open for 2026–27</h2>
+      <p>
+        Take the first step toward your goals. Contact our admissions team
+        for eligibility, important dates and application guidance.
+      </p>
+      <a class="button" href="mailto:admissions@brightfuture.edu">
+        Contact Admissions
+      </a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <strong>Bright Future College</strong><br>
+    100 Knowledge Avenue, Your City · +91 98765 43210<br>
+    © 2026 Bright Future College. All rights reserved.
+  </footer>
+</body>
+</html>
